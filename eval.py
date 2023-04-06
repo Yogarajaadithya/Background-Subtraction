@@ -43,7 +43,6 @@ def main(args):
         iou = binary_mask_iou(gt_mask, pred_mask)
 
         if type(iou) == tuple:
-            # print(filename)
             iou = iou[0]
             wrong_mask_count += 1
 
